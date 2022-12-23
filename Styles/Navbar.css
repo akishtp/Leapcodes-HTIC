@@ -6,6 +6,7 @@
   color: #000000;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   box-shadow: 0px 0px 4px 0px #111;
   display: flex;
   align-items: center;
@@ -51,7 +52,7 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -69,12 +70,13 @@
   }
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
   }
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
-    height: 10px;
+    height: 1px;
+    padding: 4px 0;
     border-top: 2px solid #000000;
   }
   .nav > .nav-links {
