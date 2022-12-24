@@ -10,35 +10,14 @@ body {
 }
 
 /* passion img */
-.col2 > .head-img {
+.head-img {
     background-image: url("https://pbs.twimg.com/media/D98GtBWXYAIRvJG?format=jpg&name=medium");
     background-repeat: no-repeat;
     background-size: cover;
     width: 97%;
     height: 450px;
     border-radius: 8px;
-    transform: translateY(-50px);
 }
-
-/* space division */
-.row1 > .header, .row2 > .col2 {
-    width: 50%;
-}
-
-/* .row2 > .col2 {
-    transform: translateY(-100px);
-} */
-
-.row1 > .get-quote, .row2 > .col1 {
-    width: 20%;
-}
-
-/* related articles images */
-/* if this is an img tag use this */
-/* .other > .article > .articc > img {
-    width: 100px;
-    height: 100px;
-} */
 
 .other > .article > .articc > .rel-img {
     background-repeat: no-repeat;
@@ -58,38 +37,10 @@ body {
     background-image: url("./assets/treelight.jpg");
 }
 
-/* list style */
-/* .content > .contt > ol {
-    list-style-type: decimal-leading-zero; */
-    /* list-style: decimal-leading-zero inside url("./assets/circle-32.png"); */
-    /* counter-reset: li;
-    font-size: 14px;
-    line-height: 18px;
-    padding-left: 10px; */
-/* } */
-
-/* .content > .contt > ol li {
-    position: relative;
-    padding: 5px 0 5px 30px;
-}
-
-.content > .contt > ol li:before {
-    content: counter(li);
-    counter-increment: li;
-    height: 30px;
-    width: 30px;
-    color: #fff;
-    border: 1px solid #1C4284;
-    background-color: #1C4284;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-    transform: translateX(-50px);
-} */
 
 /* social images */
 .link-holder {
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .link-holder > img {
@@ -97,28 +48,56 @@ body {
     height: 20px;
 }
 
-/* making it work in a different order on mobile */
-.row1, .row2, .other > .article {
+.other > .article {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-/* margins */
-.row1, .row2, .other {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.home {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.main-content > .header {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.main-content > .get-quote {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.main-content > .blog-holder {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.main-content > .contact {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
-    .row1, .row2, .other > .article  {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     /* space division */
-    .row1 > .header, .row2 > .col2, .row1 > .get-quote, .row2 > .col1, .article > .articc {
+    .article > .articc {
         margin: 20px;
         width: 90%;
     }
@@ -127,7 +106,7 @@ body {
         transform: translateX(-15px);
     }
 
-    .col2 > .head-img {
+    .head-img {
         height: 200px;
         background-size: cover;
         margin-bottom: 50px;
@@ -138,7 +117,7 @@ body {
         padding: 10px;
     }
 
-    .row1, .row2, .other {
+    .other {
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -159,14 +138,14 @@ body {
 }
 
 /* Main Header */
-.row1 > .header > .title {
+.header > .title {
     font-size: 30px;
     color: #1C4284;
     font-weight: 700;   
 }
 
 /* Smaller Headers and realted articles headers*/
-.blog-holder .title , .articc > .title {
+.blog-holder > .content > .title , .articc > .title {
     font-size: 20px;
     color: #1C4284;
     font-weight: 700;
@@ -178,19 +157,6 @@ body {
     color: #1C4284;
     font-weight: 600;
 }
-
-/* list style headers */
-/* .contt > ol > li {
-    font-size: 20px;
-    font-weight: 600;
-    color: #1C4284;
-    margin: 20px;
-    transform: translateX(-30px);
-} */
-
-/* .contt > ol > p {
-    transform: translateX(-30px);
-} */
 
 /* Socials aligned */
 .socials > .links {
@@ -208,7 +174,7 @@ body {
 .other > .header {
     font-size: 24px;
     font-weight: 600;
-    width: 70%;
+    width: 60%;
     justify-content: flex-start;
     margin: 30px;
 }
@@ -259,7 +225,7 @@ body {
 
 /* articles container box */
 .other > .article {
-    width: 70%;
+    width: 60%;
 }
 
 
@@ -309,9 +275,11 @@ body {
 .pointers > .point > .list-content > .des {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-right: 40px;
 }
 
 /* get quote */
+
 .get-quote > form {
     border: solid #CCD1DE 1px;
     display: flex;

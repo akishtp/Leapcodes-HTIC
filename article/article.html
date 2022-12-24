@@ -9,46 +9,42 @@
     <script src="index.js" defer></script>
     <title>Article</title>
 </head>
-<body class="article">
+<body>
     <nav>
         There is a navbar here
     </nav>
     <!-- insert link thing here -->
-    <div class="row1">
-        <div class="header">
-            <div class="title">
-                Renew Your Car Insurance Policy with the Al-Based Technology
+    <div class="home">
+        <div class="main-content">
+            <div class="header">
+                <div class="title">
+                    Renew Your Car Insurance Policy with the Al-Based Technology
+                </div>
+                <div class="contt">
+                    <p id="toBeChanged">
+                        <!--Content <span id="ActiveReadMore">Read More</span> -->
+                    </p>
+                </div>
             </div>
-            <div class="contt">
-                <p id="toBeChanged">
-                    <!--Content <span id="ActiveReadMore">Read More</span> -->
-                </p>
+            <div class="get-quote">
+                <form>
+                    <div class="gquote">Get a quote</div>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required/>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required/>
+                    <input type="tel" name="phno" id="phno" placeholder="Phone Number" required/>
+                    <input type="text" name="cname" id="cname" placeholder="Company Name" required/>
+                    <select name="service" id="service" required>
+                        <option value="" selected hidden>Select Type of Service</option>
+                        <option value="s1">Service 1</option>
+                        <option value="s2">Service 2</option>
+                        <option value="s3">Service 3</option>
+                        <option value="s4">Service 4</option>
+                    </select>
+                    <input type="button" value="Get Quote" class="quote-get">
+                </form>
             </div>
-            <!-- <img src="https://pbs.twimg.com/media/D98GtBWXYAIRvJG?format=jpg&name=medium" alt="passion" class="img-holder" /> -->
-        </div>
-        <div class="get-quote">
-            <form>
-                <div class="gquote">Get a quote</div>
-                <input type="text" name="fullname" id="fullname" placeholder="Full Name" required/>
-                <input type="email" name="email" id="email" placeholder="Email Address" required/>
-                <input type="tel" name="phno" id="phno" placeholder="Phone Number" required/>
-                <input type="text" name="cname" id="cname" placeholder="Company Name" required/>
-                <select name="service" id="service" required>
-                    <option value="" selected hidden>Select Type of Service</option>
-                    <option value="s1">Service 1</option>
-                    <option value="s2">Service 2</option>
-                    <option value="s3">Service 3</option>
-                    <option value="s4">Service 4</option>
-                </select>
-                <input type="button" value="Get Quote" class="quote-get">
-            </form>
-        </div>
-    </div>
-    <div class="row2">
-        <div class="col2">
-            <div class="head-img"></div>
-
             <div class="blog-holder">
+                <div class="head-img"></div>
                 <div class="content">
                     <div class="title">
                         All about food damages and its impacts
@@ -74,17 +70,6 @@
                     </div>
                     <div class="contt">
                         <div class="head">To protect your vehicle from unforeseen damages, especially the flood damages, it is better to invest in a comprehensive car insurance policy. However, to enhance the coverage for certain damages or losses caused due to floods, you must include the right add-on covers with your insurance plan.</div>
-                        <!-- <ol>
-                            <li>Engine Protection Add-on Cover</li>
-                            <p>Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.</p>
-                            <li>Engine Protection Add-on Cover</li>
-                            <p>Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.</p>
-                            <li>Engine Protection Add-on Cover</li>
-                            <p>Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.</p>
-                            <li>Engine Protection Add-on Cover</li>
-                            <p>Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.</p>
-                        </ol> -->
-
                         <div class="pointers">
                             <div class="point">
                                 <div class="numero">
@@ -129,44 +114,44 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col1">
-            <div class="partners">
-                Partner links go here.....................
-            </div>
-            <div class="socials">
-                <div class="help">
-                    Help us spread the word
+            <div class="contact">
+                <div class="partners">
+                    Partner links go here.....................
                 </div>
-                <div class="subtt">
-                    We would live to assist you on
-                </div>
-                <div class="links">
-                    <a href="https://facebook.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/facebook.png" alt="facebook"/>
-                        </div>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/twitter.png" alt="twitter" />
-                        </div>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/linkedin.png" alt="linkedin" />
-                        </div>
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/instagram.png" alt="instagram" />
-                        </div>
-                    </a>
-                    <a href="https://youtube.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/youtube.png" alt="youtube" />
-                        </div>
-                    </a>
+                <div class="socials">
+                    <div class="help">
+                        Help us spread the word
+                    </div>
+                    <div class="subtt">
+                        We would live to assist you on
+                    </div>
+                    <div class="links">
+                        <a href="https://facebook.com" target="_blank">
+                            <div class="link-holder">
+                                <img src="./assets/facebook.png" alt="facebook"/>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <div class="link-holder">
+                                <img src="./assets/twitter.png" alt="twitter" />
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank">
+                            <div class="link-holder">
+                                <img src="./assets/linkedin.png" alt="linkedin" />
+                            </div>
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <div class="link-holder">
+                                <img src="./assets/instagram.png" alt="instagram" />
+                            </div>
+                        </a>
+                        <a href="https://youtube.com" target="_blank">
+                            <div class="link-holder">
+                                <img src="./assets/youtube.png" alt="youtube" />
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
