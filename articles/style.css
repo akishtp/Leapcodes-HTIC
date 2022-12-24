@@ -8,6 +8,10 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .articles-body {
   width: clamp(64%, 767px, 94%);
   margin: 0 auto;
