@@ -115,3 +115,8 @@
 .navigation a:last-of-type {
   color: #a72694;
 }
+@media (max-width: 767px) {
+  .home-body .navigation {
+    display: none;
+  }
+}
