@@ -13,7 +13,7 @@ a {
   color: inherit;
 }
 .home .home-body {
-  width: clamp(60%, 767px, 94%);
+  width: clamp(64%, 767px, 94%);
   margin: 10px auto;
 }
 .navigation {
@@ -84,6 +84,7 @@ a {
   margin: 0 5px;
   flex-direction: column;
   width: 33%;
+  height: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -100,8 +101,9 @@ a {
 .card .title {
   color: #a72694;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   margin: 2px 0;
+  line-height: 14px;
 }
 .card .top-text {
   font-size: 14px;
