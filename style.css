@@ -13,7 +13,7 @@ a {
   color: inherit;
 }
 .home .home-body {
-  width: clamp(70%, 767px, 94%);
+  width: clamp(60%, 767px, 94%);
   margin: 10px auto;
 }
 .navigation {
