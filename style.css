@@ -8,6 +8,10 @@ body {
   background-color: #f3f5fa;
   font-family: "Montserrat", sans-serif;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .home .home-body {
   width: clamp(70%, 767px, 94%);
   margin: 10px auto;

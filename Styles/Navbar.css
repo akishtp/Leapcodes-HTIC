@@ -103,3 +103,15 @@
     overflow-y: auto;
   }
 }
+
+.navigation {
+  margin: 10px 0 0 0;
+}
+.navigation a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+.navigation a:last-of-type {
+  color: #a72694;
+}
