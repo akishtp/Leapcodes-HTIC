@@ -333,19 +333,20 @@ body {
     .contact > .socials, .contact > .partners {
         margin: 0;
         margin-top: 10px;
-        width: 90vw;
+        width: 85vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
+    .contact > .socials {
+      width: 80vw;
+    }
+
     .home {
         padding-top: 0;
         padding: 10px;
-    }
-
-    .contact > .socials {
-        width: 90%;
+        width: 95%;
     }
 
     .get-quote > form {
