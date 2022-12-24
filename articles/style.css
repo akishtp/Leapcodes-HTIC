@@ -5,10 +5,12 @@
   margin: 0;
   padding: 0;
 }
-.articles-body {
-  width: 64%;
-  margin: 0 auto;
+body {
   font-family: "Montserrat", sans-serif;
+}
+.articles-body {
+  width: clamp(64%, 767px, 94%);
+  margin: 0 auto;
 }
 .articles-body .header {
   display: flex;
@@ -27,12 +29,11 @@
 }
 .parent {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(7, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
-
 .div1 {
   grid-area: 1 / 1 / 3 / 6;
 }
@@ -44,6 +45,12 @@
 }
 .div4 {
   grid-area: 4 / 6 / 8 / 8;
+}
+@media (max-width: 767px) {
+  .parent {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* get quote */
@@ -68,12 +75,12 @@ form > .gquote {
 form > input,
 form > select {
   margin: 8px;
-  height: 36px;
+  height: 40px;
   background-color: #fff;
   border: solid #ccd1de 2px;
   padding: 4px;
   border-radius: 4px;
-  width: 80%;
+  width: 83%;
 }
 
 form > select,
@@ -93,19 +100,161 @@ form > select:invalid {
 }
 
 /* the article card - the horizontal one */
+.div3 {
+  padding: 0 0 24px 0;
+}
 .article-card {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e4e7ee;
 }
 .article-card img {
-  width: 100px;
-  height: 100px;
+  height: 108px;
+  width: 108px;
   object-fit: cover;
   object-position: bottom;
 }
 .article-card .article-content {
-  margin: 4px 10px;
+  margin: 0 10px;
 }
 .article-card .article-content .article-header {
   color: #1c4284;
   font-weight: 700;
+  font-size: 14px;
+  margin: 4px 0;
+}
+.article-card .article-content .article-date {
+  font-size: 12px;
+  font-weight: 300;
+  color: #8d8d8d;
+  margin: 4px 0;
+}
+.article-card .article-content .article-content-body {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.article-card .article-content .read-more {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.article-card .article-content .read-more a {
+  text-decoration: none;
+  color: #a72694;
+}
+@media (max-width: 767px) {
+  .article-card {
+    flex-direction: column;
+  }
+  .article-card img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* other blogs */
+.other-blogs {
+  background-color: #f3f5fa;
+  width: 100%;
+  padding: 36px 0;
+}
+.other-blogs-wrapper {
+  width: clamp(64%, 767px, 94%);
+  margin: 0 auto;
+}
+.other-blogs-header {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 36px 0;
+}
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.cards {
+  margin: 24px -6px;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 5px;
+  flex-direction: column;
+  width: 33%;
+}
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    margin: 16px 0;
+  }
+}
+.card .title {
+  color: #a72694;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 2px 0;
+  line-height: 14px;
+}
+.card .top-text {
+  font-size: 14px;
+  margin: 6px 0;
+}
+.card .bold-text {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+.card .bottom-text {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.card .read-more {
+  font-size: 14px;
+  text-decoration: none;
+  color: #1c4284;
+  margin: 4px 0;
+}
+.card .view-more {
+  height: 42px;
+  border: 2px solid #a72694;
+  background-color: #ffffff;
+  color: #a72694;
+  margin: 4px 0;
+}
+.card .get-quote {
+  height: 42px;
+  border: 2px solid #1c4284;
+  background-color: #1c4284;
+  color: #f1f1f1;
+  margin: 4px 0;
+}
+.cards .cards-navigator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0 0 0;
+}
+.cards .cards-navigator button {
+  border: 2px solid #1c4284;
+  background-color: #ffffff;
+  color: #1c4284;
+  margin: 0 4px;
+  height: 32px;
+  width: 32px;
+}
+.cards .cards-navigator button:first-of-type {
+  background-color: #1c4284;
+  color: #fff;
 }
