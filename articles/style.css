@@ -5,10 +5,12 @@
   margin: 0;
   padding: 0;
 }
-.articles-body {
-  width: 64%;
-  margin: 0 auto;
+body {
   font-family: "Montserrat", sans-serif;
+}
+.articles-body {
+  width: clamp(64%, 767px, 94%);
+  margin: 0 auto;
 }
 .articles-body .header {
   display: flex;
@@ -98,6 +100,9 @@ form > select:invalid {
 }
 
 /* the article card - the horizontal one */
+.div3 {
+  padding: 0 0 24px 0;
+}
 .article-card {
   display: flex;
   align-items: center;
@@ -135,4 +140,120 @@ form > select:invalid {
 .article-card .article-content .read-more a {
   text-decoration: none;
   color: #a72694;
+}
+@media (max-width: 767px) {
+  .article-card {
+    flex-direction: column;
+  }
+  .article-card img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* other blogs */
+.other-blogs {
+  background-color: #f3f5fa;
+  width: 100%;
+  padding: 36px 0;
+}
+.other-blogs-wrapper {
+  width: clamp(64%, 767px, 94%);
+  margin: 0 auto;
+}
+.other-blogs-header {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 36px 0;
+}
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.cards {
+  margin: 24px -6px;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 5px;
+  flex-direction: column;
+  width: 33%;
+}
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    margin: 16px 0;
+  }
+}
+.card .title {
+  color: #a72694;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 2px 0;
+}
+.card .top-text {
+  font-size: 14px;
+  margin: 6px 0;
+}
+.card .bold-text {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+.card .bottom-text {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.card .read-more {
+  font-size: 14px;
+  text-decoration: none;
+  color: #1c4284;
+  margin: 4px 0;
+}
+.card .view-more {
+  height: 42px;
+  border: 2px solid #a72694;
+  background-color: #ffffff;
+  color: #a72694;
+  margin: 4px 0;
+}
+.card .get-quote {
+  height: 42px;
+  border: 2px solid #1c4284;
+  background-color: #1c4284;
+  color: #f1f1f1;
+  margin: 4px 0;
+}
+.cards .cards-navigator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0 0 0;
+}
+.cards .cards-navigator button {
+  border: 2px solid #1c4284;
+  background-color: #ffffff;
+  color: #1c4284;
+  margin: 0 4px;
+  height: 32px;
+  width: 32px;
+}
+.cards .cards-navigator button:first-of-type {
+  background-color: #1c4284;
+  color: #fff;
 }
