@@ -1,80 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets//favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Styles/Navbar.css" />
+    <link rel="stylesheet" href="../Styles/Footer.css" />
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/67fe837472.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="index.js" defer></script>
     <title>Article</title>
-</head>
-<body class="article">
-    <nav>
-        There is a navbar here
+  </head>
+  <body class="article">
+    <nav class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-title"><img src="../assets/logo.png" /></div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Discover Us</a>
+        <a href="#">Services</a>
+        <a href="#">Our Thinking</a>
+        <a href="#">Industries</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact Us</a>
+      </div>
     </nav>
     <!-- insert link thing here -->
     <div class="row1">
-        <div class="header">
-            <div class="title">
-                Renew Your Car Insurance Policy with the Al-Based Technology
-            </div>
-            <div class="contt">
-                <p id="toBeChanged">
-                    <!--Content <span id="ActiveReadMore">Read More</span> -->
-                </p>
-            </div>
-            <!-- <img src="https://pbs.twimg.com/media/D98GtBWXYAIRvJG?format=jpg&name=medium" alt="passion" class="img-holder" /> -->
+      <div class="header">
+        <div class="title">
+          Renew Your Car Insurance Policy with the Al-Based Technology
         </div>
-        <div class="get-quote">
-            <form>
-                <div class="gquote">Get a quote</div>
-                <input type="text" name="fullname" id="fullname" placeholder="Full Name" required/>
-                <input type="email" name="email" id="email" placeholder="Email Address" required/>
-                <input type="tel" name="phno" id="phno" placeholder="Phone Number" required/>
-                <input type="text" name="cname" id="cname" placeholder="Company Name" required/>
-                <select name="service" id="service" required>
-                    <option value="" selected hidden>Select Type of Service</option>
-                    <option value="s1">Service 1</option>
-                    <option value="s2">Service 2</option>
-                    <option value="s3">Service 3</option>
-                    <option value="s4">Service 4</option>
-                </select>
-                <input type="button" value="Get Quote" class="quote-get">
-            </form>
+        <div class="contt">
+          <p id="toBeChanged">
+            <!--Content <span id="ActiveReadMore">Read More</span> -->
+          </p>
         </div>
+        <!-- <img src="https://pbs.twimg.com/media/D98GtBWXYAIRvJG?format=jpg&name=medium" alt="passion" class="img-holder" /> -->
+      </div>
+      <div class="get-quote">
+        <form>
+          <div class="gquote">Get a quote</div>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="tel"
+            name="phno"
+            id="phno"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            type="text"
+            name="cname"
+            id="cname"
+            placeholder="Company Name"
+            required
+          />
+          <select name="service" id="service" required>
+            <option value="" selected hidden>Select Type of Service</option>
+            <option value="s1">Service 1</option>
+            <option value="s2">Service 2</option>
+            <option value="s3">Service 3</option>
+            <option value="s4">Service 4</option>
+          </select>
+          <input type="button" value="Get Quote" class="quote-get" />
+        </form>
+      </div>
     </div>
     <div class="row2">
-        <div class="col2">
-            <div class="head-img"></div>
+      <div class="col2">
+        <div class="head-img"></div>
 
-            <div class="blog-holder">
-                <div class="content">
-                    <div class="title">
-                        All about food damages and its impacts
-                    </div>
-                    <div class="contt">
-                        <p>Your flood damage cover depends upon the type of car insurance plan you have purchased. If you have comprehensive coverage, which is an optional cover, then only the flood damage is covered in your car insurance policy. However, if you have a third-party car insurance policy, you will not receive any financial protection against the flood damages caused to your insured car.</p>
-                        <p>A comprehensive car insurance policy covers all kinds of damages to your insured car by natural calamities such as cyclones, tides, floods, tsunamis, etc. Moreover, it covers damages sustained by cars due to fire, accidents, theft, and man-made calamities.It is always an ideal choice to go for comprehensive insurance policy if you reside in a flood-prone area.</p>
-                        <p>A single hit by the flood can severely damage your vehicle, and thus, it will lead to a reduction in its value. In the worst-case scenario, it can turn into a total loss situation where the damages are beyond repair. If you own a comprehensive car insurance policy, you might save a huge amount during such unforeseen instances.</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        Does Car Insurance Covers Flood Damage?
-                    </div>
-                    <div class="contt">
-                        <p>Yes, your comprehensive car insurance policy covers the flood damage. Therefore, it is essential to get adequate coverage for your car. Comprehensive car insurance is the best way to get compensated for flood damages or total loss situations.</p>
-                        <p>Moreover, you have the option to enhance the basic coverage by including add-on covers. Some common types of add-on cover that you can include in your car insurance policy are engine protection add-on cover, consumables cover, zero depreciation cover, etc. You can also visit the official website of Policybazaar Insurance Brokers Private Limited to purchase car insurance online along with suitable add-on covers.</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        Best Car Insurance Add-ons for the Flood Damages
-                    </div>
-                    <div class="contt">
-                        <div class="head">To protect your vehicle from unforeseen damages, especially the flood damages, it is better to invest in a comprehensive car insurance policy. However, to enhance the coverage for certain damages or losses caused due to floods, you must include the right add-on covers with your insurance plan.</div>
-                        <!-- <ol>
+        <div class="blog-holder">
+          <div class="content">
+            <div class="title">All about food damages and its impacts</div>
+            <div class="contt">
+              <p>
+                Your flood damage cover depends upon the type of car insurance
+                plan you have purchased. If you have comprehensive coverage,
+                which is an optional cover, then only the flood damage is
+                covered in your car insurance policy. However, if you have a
+                third-party car insurance policy, you will not receive any
+                financial protection against the flood damages caused to your
+                insured car.
+              </p>
+              <p>
+                A comprehensive car insurance policy covers all kinds of damages
+                to your insured car by natural calamities such as cyclones,
+                tides, floods, tsunamis, etc. Moreover, it covers damages
+                sustained by cars due to fire, accidents, theft, and man-made
+                calamities.It is always an ideal choice to go for comprehensive
+                insurance policy if you reside in a flood-prone area.
+              </p>
+              <p>
+                A single hit by the flood can severely damage your vehicle, and
+                thus, it will lead to a reduction in its value. In the
+                worst-case scenario, it can turn into a total loss situation
+                where the damages are beyond repair. If you own a comprehensive
+                car insurance policy, you might save a huge amount during such
+                unforeseen instances.
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">Does Car Insurance Covers Flood Damage?</div>
+            <div class="contt">
+              <p>
+                Yes, your comprehensive car insurance policy covers the flood
+                damage. Therefore, it is essential to get adequate coverage for
+                your car. Comprehensive car insurance is the best way to get
+                compensated for flood damages or total loss situations.
+              </p>
+              <p>
+                Moreover, you have the option to enhance the basic coverage by
+                including add-on covers. Some common types of add-on cover that
+                you can include in your car insurance policy are engine
+                protection add-on cover, consumables cover, zero depreciation
+                cover, etc. You can also visit the official website of
+                Policybazaar Insurance Brokers Private Limited to purchase car
+                insurance online along with suitable add-on covers.
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              Best Car Insurance Add-ons for the Flood Damages
+            </div>
+            <div class="contt">
+              <div class="head">
+                To protect your vehicle from unforeseen damages, especially the
+                flood damages, it is better to invest in a comprehensive car
+                insurance policy. However, to enhance the coverage for certain
+                damages or losses caused due to floods, you must include the
+                right add-on covers with your insurance plan.
+              </div>
+              <!-- <ol>
                             <li>Engine Protection Add-on Cover</li>
                             <p>Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.</p>
                             <li>Engine Protection Add-on Cover</li>
@@ -85,147 +175,189 @@
                             <p>Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.</p>
                         </ol> -->
 
-                        <div class="pointers">
-                            <div class="point">
-                                <div class="numero">
-                                    1
-                                </div>
-                                <div class="list-content">
-                                    <div class="header">
-                                        Engine Protection Add-on Cover
-                                    </div>
-                                    <div class="des">
-                                        Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <div class="numero">
-                                    2
-                                </div>
-                                <div class="list-content">
-                                    <div class="header">
-                                        Engine Protection Add-on Cover
-                                    </div>
-                                    <div class="des">
-                                        Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="point">
-                                <div class="numero">
-                                    3
-                                </div>
-                                <div class="list-content">
-                                    <div class="header">
-                                        Engine Protection Add-on Cover
-                                    </div>
-                                    <div class="des">
-                                        Your comprehensive car insurance policy does not compensate for the damages caused to the car engine. If you obtain the engine protection add-on cover, you will get financial coverage for damaged engine parts.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+              <div class="pointers">
+                <div class="point">
+                  <div class="numero">1</div>
+                  <div class="list-content">
+                    <div class="header">Engine Protection Add-on Cover</div>
+                    <div class="des">
+                      Your comprehensive car insurance policy does not
+                      compensate for the damages caused to the car engine. If
+                      you obtain the engine protection add-on cover, you will
+                      get financial coverage for damaged engine parts.
                     </div>
+                  </div>
                 </div>
+                <div class="point">
+                  <div class="numero">2</div>
+                  <div class="list-content">
+                    <div class="header">Engine Protection Add-on Cover</div>
+                    <div class="des">
+                      Your comprehensive car insurance policy does not
+                      compensate for the damages caused to the car engine. If
+                      you obtain the engine protection add-on cover, you will
+                      get financial coverage for damaged engine parts.
+                    </div>
+                  </div>
+                </div>
+                <div class="point">
+                  <div class="numero">3</div>
+                  <div class="list-content">
+                    <div class="header">Engine Protection Add-on Cover</div>
+                    <div class="des">
+                      Your comprehensive car insurance policy does not
+                      compensate for the damages caused to the car engine. If
+                      you obtain the engine protection add-on cover, you will
+                      get financial coverage for damaged engine parts.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="col1">
-            <div class="partners">
-                Partner links go here.....................
-            </div>
-            <div class="socials">
-                <div class="help">
-                    Help us spread the word
-                </div>
-                <div class="subtt">
-                    We would live to assist you on
-                </div>
-                <div class="links">
-                    <a href="https://facebook.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/facebook.png" alt="facebook"/>
-                        </div>
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/twitter.png" alt="twitter" />
-                        </div>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/linkedin.png" alt="linkedin" />
-                        </div>
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/instagram.png" alt="instagram" />
-                        </div>
-                    </a>
-                    <a href="https://youtube.com" target="_blank">
-                        <div class="link-holder">
-                            <img src="./assets/youtube.png" alt="youtube" />
-                        </div>
-                    </a>
-                </div>
-            </div>
+      </div>
+      <div class="col1">
+        <div class="partners">Partner links go here.....................</div>
+        <div class="socials">
+          <div class="help">Help us spread the word</div>
+          <div class="subtt">We would live to assist you on</div>
+          <div class="links">
+            <a href="https://facebook.com" target="_blank">
+              <div class="link-holder">
+                <img src="./assets/facebook.png" alt="facebook" />
+              </div>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <div class="link-holder">
+                <img src="./assets/twitter.png" alt="twitter" />
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <div class="link-holder">
+                <img src="./assets/linkedin.png" alt="linkedin" />
+              </div>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <div class="link-holder">
+                <img src="./assets/instagram.png" alt="instagram" />
+              </div>
+            </a>
+            <a href="https://youtube.com" target="_blank">
+              <div class="link-holder">
+                <img src="./assets/youtube.png" alt="youtube" />
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
     <div class="other">
-        <div class="header">Other Articles</div>
-        <div class="article">
-            <div class="articc">
-                <div class="rel-img"></div>
-                <!-- <img src="https://avatars.mds.yandex.net/i?id=da79047382c66ce7c6a79cace327167a5ae80dbe-8196710-images-thumbs&n=13&exp=1" alt="penman" /> -->
-                <div class="lighttxt">
-                    Aug 01, 2022 | 1234 Views
-                </div>
-                <div class="title">
-                    Floods in UAE: Residents submits insurance claims after floods…
-                </div>
-                <div class="content">
-                    Let's gift them with the life theytellus ut ante suscipit, ullamcorper finibus erat…
-                </div>
-                <p class="read-more">
-                    Read More...
-                </p>
-            </div>
-            <div class="articc">
-                <div class="rel-img"></div>
-                <!-- <img src="https://images.squarespace-cdn.com/content/v1/5be714f2aa49a1b04c9fbac7/1618962020322-IGEJP6SXLCDQQ1XICQSK/managing%2Breactivity.jpg" alt="penman" /> -->
-                <div class="lighttxt">
-                    Aug 01, 2022 | 1234 Views
-                </div>
-                <div class="title">
-                    Floods in UAE: Residents submits insurance claims after floods…
-                </div>
-                <div class="content">
-                    Let's gift them with the life theytellus ut ante suscipit, ullamcorper finibus erat…
-                </div>
-                <p class="read-more">
-                    Read More...
-                </p>
-            </div>
-            <div class="articc">
-                <div class="rel-img"></div>
-                <!-- <img src="https://yandex-images.clstorage.net/D100lk363/faaecaTf/tzUeYKD0WQAl_S4oWsI4r8SXAUCSj9Vd5ZmbCuygCGWNnV8d-KUTK0JgOBTzm8RxSHtGKe-kxiFyITV3r1cgTtcRfhHUMD2xoHg6Wc-CuJ-UttSUo54Q_aBIPy8sZGjA6F1qCY3l90unUdl0RrgixkosIJ6Z8xFj0PXgMs8HMa-nFI6iExF6dHXuzG_p4XlfN1fWAqCMUX1R66sdrMe8UN_4rL38dzdcB6Ab0TLY0ZXLvPANSHKwczE24PJ9lgGKJbX-kfLEOAQ1z6yP6kEKLwSFFTPifgONA_qZbU8l_NF9qN3PTLWEPOWyeKPDiIFXe5xCXDiSA1GjRrCA3FfhCiWUHkNBR4ikJW__nHsg2u-nRAUBA96DHaA6Gl2ex51DrcoNjJ_UR-wGQjpRMtmxdAtcwe57s6JDoYSyoqw3AMnEtN8z8aZ5dVVNnS-oM4h_5WfFUgO-gWxh-Au-vAe88P7rH07NZnUtBWKLcsCLEmaLTrBcObPB4xMUwkFtpGA7pGV_IHLFGFW37d4e-kKIrvT3pSPzT-Oc4itKza4Ez6BvSN3MnRSnbbSjOGDDSZBHKJ6BP0mz8IORB0AyvSXBa8WnXWPShFrnh139THuQqj71RsYCk35hzUDaCeycB14g3oj8Dc0H18-0cBlzEfjzRMlvow1oE3PxoNYzUT0UAnrX5t_w4nZblgc_fr4o8mnd5UbWoTJ88oxxepjcbTdcIz_6XW1exeY9ZzHIsMKJAFfaXqOsGmDhQxDnM6I_VjGJ9Vc80PG1irVkDx58aTNKnxQHFOEBjaDec1oaDpw3DnOOCvx-3xfn7QehaLFhOvF3OI1SP3uAIcHRt1GC79eSW8ZGPELTlOlXhXzPflmiuA0GlefAMCxin0Eqq-xcRXziXMsNzV1UVi2HYRixYgsD5KucYT448NORYPQDoM5VgDkmNszSwBfKtPQ-XhyKEmp_NcYEMSO_4f0iyas-niTM4" alt="penman" /> -->
-                <div class="lighttxt">
-                    Aug 01, 2022 | 1234 Views
-                </div>
-                <div class="title">
-                    Floods in UAE: Residents submits insurance claims after floods…
-                </div>
-                <div class="content">
-                    Let's gift them with the life theytellus ut ante suscipit, ullamcorper finibus erat…
-                </div>
-                <p class="read-more">
-                    Read More...
-                </p>
-            </div>
+      <div class="header">Other Articles</div>
+      <div class="article">
+        <div class="articc">
+          <div class="rel-img"></div>
+          <!-- <img src="https://avatars.mds.yandex.net/i?id=da79047382c66ce7c6a79cace327167a5ae80dbe-8196710-images-thumbs&n=13&exp=1" alt="penman" /> -->
+          <div class="lighttxt">Aug 01, 2022 | 1234 Views</div>
+          <div class="title">
+            Floods in UAE: Residents submits insurance claims after floods…
+          </div>
+          <div class="content">
+            Let's gift them with the life theytellus ut ante suscipit,
+            ullamcorper finibus erat…
+          </div>
+          <p class="read-more">Read More...</p>
         </div>
+        <div class="articc">
+          <div class="rel-img"></div>
+          <!-- <img src="https://images.squarespace-cdn.com/content/v1/5be714f2aa49a1b04c9fbac7/1618962020322-IGEJP6SXLCDQQ1XICQSK/managing%2Breactivity.jpg" alt="penman" /> -->
+          <div class="lighttxt">Aug 01, 2022 | 1234 Views</div>
+          <div class="title">
+            Floods in UAE: Residents submits insurance claims after floods…
+          </div>
+          <div class="content">
+            Let's gift them with the life theytellus ut ante suscipit,
+            ullamcorper finibus erat…
+          </div>
+          <p class="read-more">Read More...</p>
+        </div>
+        <div class="articc">
+          <div class="rel-img"></div>
+          <!-- <img src="https://yandex-images.clstorage.net/D100lk363/faaecaTf/tzUeYKD0WQAl_S4oWsI4r8SXAUCSj9Vd5ZmbCuygCGWNnV8d-KUTK0JgOBTzm8RxSHtGKe-kxiFyITV3r1cgTtcRfhHUMD2xoHg6Wc-CuJ-UttSUo54Q_aBIPy8sZGjA6F1qCY3l90unUdl0RrgixkosIJ6Z8xFj0PXgMs8HMa-nFI6iExF6dHXuzG_p4XlfN1fWAqCMUX1R66sdrMe8UN_4rL38dzdcB6Ab0TLY0ZXLvPANSHKwczE24PJ9lgGKJbX-kfLEOAQ1z6yP6kEKLwSFFTPifgONA_qZbU8l_NF9qN3PTLWEPOWyeKPDiIFXe5xCXDiSA1GjRrCA3FfhCiWUHkNBR4ikJW__nHsg2u-nRAUBA96DHaA6Gl2ex51DrcoNjJ_UR-wGQjpRMtmxdAtcwe57s6JDoYSyoqw3AMnEtN8z8aZ5dVVNnS-oM4h_5WfFUgO-gWxh-Au-vAe88P7rH07NZnUtBWKLcsCLEmaLTrBcObPB4xMUwkFtpGA7pGV_IHLFGFW37d4e-kKIrvT3pSPzT-Oc4itKza4Ez6BvSN3MnRSnbbSjOGDDSZBHKJ6BP0mz8IORB0AyvSXBa8WnXWPShFrnh139THuQqj71RsYCk35hzUDaCeycB14g3oj8Dc0H18-0cBlzEfjzRMlvow1oE3PxoNYzUT0UAnrX5t_w4nZblgc_fr4o8mnd5UbWoTJ88oxxepjcbTdcIz_6XW1exeY9ZzHIsMKJAFfaXqOsGmDhQxDnM6I_VjGJ9Vc80PG1irVkDx58aTNKnxQHFOEBjaDec1oaDpw3DnOOCvx-3xfn7QehaLFhOvF3OI1SP3uAIcHRt1GC79eSW8ZGPELTlOlXhXzPflmiuA0GlefAMCxin0Eqq-xcRXziXMsNzV1UVi2HYRixYgsD5KucYT448NORYPQDoM5VgDkmNszSwBfKtPQ-XhyKEmp_NcYEMSO_4f0iyas-niTM4" alt="penman" /> -->
+          <div class="lighttxt">Aug 01, 2022 | 1234 Views</div>
+          <div class="title">
+            Floods in UAE: Residents submits insurance claims after floods…
+          </div>
+          <div class="content">
+            Let's gift them with the life theytellus ut ante suscipit,
+            ullamcorper finibus erat…
+          </div>
+          <p class="read-more">Read More...</p>
+        </div>
+      </div>
     </div>
     <div class="footer">
-        There is a footer here...
+      <div class="footer-wrapper">
+        <div class="footer-top">
+          <div class="logo-socials">
+            <img src="../Images/logo.png" />
+            <div class="socials">
+              <a href="#" class="fa fa-facebook-square"></a>
+              <a href="#" class="fa fa-linkedin-square"></a>
+            </div>
+          </div>
+          <div class="quick-links">
+            <div class="top-header">Quick Links</div>
+            <div class="split-into-two">
+              <div class="left-side">
+                <a href="#">Discover Us</a>
+                <a href="#">Our Thinking</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact Us</a>
+              </div>
+              <div class="right-side">
+                <a href="#">BPO</a>
+                <a href="#">HR & IT</a>
+                <a href="#">Analytics & Insights</a>
+              </div>
+            </div>
+          </div>
+          <div class="address">
+            <div class="top-header">Visit our office at</div>
+            <div class="address-lines">
+              <i class="fa-solid fa-calendar"></i>
+              <p>
+                #14 - Tower II, TransAsia Cyber Park, Infopark Phase-2, Kochi,
+                Kerala, India 682 303
+              </p>
+            </div>
+            <div class="phone">
+              <i class="fa-solid fa-phone"></i>0484 4042400
+            </div>
+            <div class="mail">
+              <i class="fa-solid fa-envelope-open"></i>sales@hticglobal.com
+            </div>
+          </div>
+          <div class="subscribe">
+            <div class="top-header">Subscribe</div>
+            <div class="updates">Get our latest updates and news.</div>
+            <div class="input-form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email address"
+              />
+              <button type="submit">
+                <i class="fa-solid fa-envelope"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2020 hticglobal.com. All Rights Reserved
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
