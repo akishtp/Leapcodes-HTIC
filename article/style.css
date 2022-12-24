@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* setting fonts and clearing default padding and margin */
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* passion img */
@@ -18,25 +18,23 @@ body {
     height: 450px;
     border-radius: 8px;
 }
-
 .other > .article > .articc > .rel-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
 }
 
 .articc:nth-of-type(1) > .rel-img {
-    background-image: url("./assets/socialization.jpg");
+  background-image: url("./assets/socialization.jpg");
 }
 
 .articc:nth-of-type(2) > .rel-img {
-    background-image: url("./assets/writing.jpg");
+  background-image: url("./assets/writing.jpg");
 }
 
 .articc:nth-of-type(3) > .rel-img {
-    background-image: url("./assets/treelight.jpg");
+  background-image: url("./assets/treelight.jpg");
 }
-
 
 /* social images */
 .link-holder {
@@ -44,8 +42,8 @@ body {
 }
 
 .link-holder > img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .other > .article {
@@ -133,8 +131,8 @@ body {
 
 /* Change cursor type for read more */
 #ActiveReadMore {
-    cursor: pointer;
-    color: #DF7038;
+  cursor: pointer;
+  color: #df7038;
 }
 
 /* Main Header */
@@ -153,21 +151,21 @@ body {
 
 /* read more in realted articles */
 .articc > .read-more {
-    font-size: 14px;
-    color: #1C4284;
-    font-weight: 600;
+  font-size: 14px;
+  color: #1c4284;
+  font-weight: 600;
 }
 
 /* Socials aligned */
-.socials > .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.col1 .socials > .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .help {
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /* Small headers */
@@ -181,46 +179,47 @@ body {
 
 /* related articles section */
 .other {
-    padding: 10px;
-    background-color: #F3F5FA;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  padding: 10px;
+  background-color: #f3f5fa;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* related articles */
 .other > .article > .articc {
-    background-color: #fff;
-    margin: 10px;
-    padding: 20px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
 }
 
 .articc > * {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* date and views */
 .lighttxt {
-    font-weight: 100;
-    font-size: 10px;
+  font-weight: 100;
+  font-size: 10px;
 }
 
 /* socials box */
-.socials {
-    border: solid #CCD1DE 1px;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.col1 .socials {
+  border: solid #ccd1de 1px;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.socials > .help, .socials > .subtt {
-    display: flex;
-    justify-content: center;
-    margin: 8px;
+.col1 .socials > .help,
+.col1 .socials > .subtt {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
 }
 
 /* articles container box */
@@ -228,48 +227,47 @@ body {
     width: 60%;
 }
 
-
 /* Points styling */
 .contt > .head {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .pointers {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .pointers > .point {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .pointers > .point > .numero {
-    background-color: #1C4284;
-    color: #CCD1DE;
-    height: 30px;
-    width: 30px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: absolute;
-    font-weight: 500;
+  background-color: #1c4284;
+  color: #ccd1de;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  font-weight: 500;
 }
 
 .pointers > .point > .list-content {
-    transform: translateX(40px);
-    display: flex;
-    flex-direction: column;
+  transform: translateX(40px);
+  display: flex;
+  flex-direction: column;
 }
 
 .pointers > .point > .list-content > .header {
-    font-weight: 600;
-    font-size: 20px;
-    align-items: center;
-    color: #1C4284;
-    overflow: hidden;
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  color: #1c4284;
+  overflow: hidden;
 }
 
 .pointers > .point > .list-content > .des {
@@ -281,42 +279,44 @@ body {
 /* get quote */
 
 .get-quote > form {
-    border: solid #CCD1DE 1px;
-    display: flex;
-    flex-direction: column;
-    padding: 4%;
-    align-items: center;
+  border: solid #ccd1de 1px;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  align-items: center;
 }
 
 form > .gquote {
-    font-size: 20px;
-    width: 80%;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 10px;
+  font-size: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 }
 
-form > input, form > select {
-    margin: 8px;
-    height: 30px;
-    background-color: #fff;
-    border: solid #CCD1DE 2px;
-    padding: 4px;
-    border-radius: 4px;
-    width: 80%;
+form > input,
+form > select {
+  margin: 8px;
+  height: 30px;
+  background-color: #fff;
+  border: solid #ccd1de 2px;
+  padding: 4px;
+  border-radius: 4px;
+  width: 80%;
 }
 
-form > select, form > .quote-get {
-    height: 40px;
-    width: 83%;
+form > select,
+form > .quote-get {
+  height: 40px;
+  width: 83%;
 }
 
 form > .quote-get {
-    border: solid #A72694 1px;
-    background-color: #A72694;
-    color: #fff;
+  border: solid #a72694 1px;
+  background-color: #a72694;
+  color: #fff;
 }
 
 form > select:invalid {
-    color: #CCD1DE;
+  color: #ccd1de;
 }

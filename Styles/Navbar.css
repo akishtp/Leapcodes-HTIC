@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+.nav {
+  height: 64px;
+  width: 100%;
+  color: #000000;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  box-shadow: 0px 0px 4px 0px #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  padding: 10px 10px 10px 10px;
+}
+.nav > .nav-header > .nav-title img {
+  height: 50px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.nav > .nav-links > a:hover {
+  color: #1c4284;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: flex;
+    flex-direction: column;
+    width: 64px;
+    height: 64px;
+    padding: 13px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 1px;
+    padding: 4px 0;
+    border-top: 2px solid #000000;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 64px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: fit-content;
+    overflow-y: auto;
+  }
+}
+
+.navigation {
+  margin: 10px 0 0 0;
+}
+.navigation a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+.navigation a:last-of-type {
+  color: #a72694;
+}

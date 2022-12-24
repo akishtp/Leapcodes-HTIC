@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.articles-body {
+  width: 64%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+.articles-body .header {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1c4284;
+  margin: 20px 0;
+}
+.articles-body .header img {
+  display: block;
+  height: 54px;
+}
+.div1 .top-body {
+  font-size: 16px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 6;
+}
+.div2 {
+  grid-area: 1 / 6 / 4 / 8;
+}
+.div3 {
+  grid-area: 3 / 1 / 8 / 6;
+}
+.div4 {
+  grid-area: 4 / 6 / 8 / 8;
+}
+
+/* get quote */
+.get-quote > form {
+  border: solid #ccd1de 1px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 4% 0;
+  align-items: center;
+  margin: 20px 0;
+}
+
+form > .gquote {
+  font-size: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+form > input,
+form > select {
+  margin: 8px;
+  height: 36px;
+  background-color: #fff;
+  border: solid #ccd1de 2px;
+  padding: 4px;
+  border-radius: 4px;
+  width: 80%;
+}
+
+form > select,
+form > .quote-get {
+  height: 40px;
+  width: 83%;
+}
+
+form > .quote-get {
+  border: solid #a72694 1px;
+  background-color: #a72694;
+  color: #fff;
+}
+
+form > select:invalid {
+  color: #ccd1de;
+}
+
+/* the article card - the horizontal one */
+.article-card {
+  display: flex;
+}
+.article-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.article-card .article-content {
+  margin: 4px 10px;
+}
+.article-card .article-content .article-header {
+  color: #1c4284;
+  font-weight: 700;
+}
