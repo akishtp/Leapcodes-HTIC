@@ -9,11 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .home .home-body {
-  width: 60%;
+  width: clamp(70%, 767px, 94%);
   margin: 10px auto;
 }
 .home-body .navigation {
-  margin: 10px 0;
+  margin: 10px 0 0 0;
 }
 .home-body .navigation a {
   text-decoration: none;
@@ -28,22 +28,107 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 .home-body .center-header {
-  margin: 0 0 12px 0;
+  margin: 12px 0;
   padding: 0 0 18px 0;
   border-bottom: 4px solid #a72694;
   color: #1c4284;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 36px;
 }
 .home-body .bold-header {
   font-weight: 700;
-  font-size: 14px;
-  margin: 12px 0;
+  font-size: 18px;
+  margin: 8px 0;
 }
 .home-body .small-header {
-  font-size: 11px;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .home-body .navigation {
+    display: none;
+  }
+  .header-content {
+    width: 100%;
+  }
+  .home-body .small-header {
+    font-size: 15px;
+  }
+}
+
+/* --------- cards--------- */
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.cards {
+  margin: 24px -6px;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 5px;
+  flex-direction: column;
+  width: 33%;
+}
+
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    margin: 16px 0;
+  }
+}
+.card .title {
+  color: #a72694;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 2px 0;
+}
+.card .top-text {
+  font-size: 14px;
+  margin: 6px 0;
+}
+.card .bold-text {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+.card .bottom-text {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.card .read-more {
+  font-size: 14px;
+  text-decoration: none;
+  color: #1c4284;
+  margin: 4px 0;
+}
+.card .view-more {
+  height: 42px;
+  border: 2px solid #a72694;
+  background-color: #ffffff;
+  color: #a72694;
+  margin: 4px 0;
+}
+.card .get-quote {
+  height: 42px;
+  border: 2px solid #1c4284;
+  background-color: #1c4284;
+  color: #f1f1f1;
+  margin: 4px 0;
 }

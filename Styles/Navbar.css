@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 .nav > .nav-header {
   display: inline;
@@ -41,7 +42,7 @@
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-  font-size: small;
+  font-size: 12px;
 }
 
 .nav > .nav-links > a:hover {
@@ -98,7 +99,7 @@
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 64px);
+    height: calc(50vh - 64px);
     overflow-y: auto;
   }
 }
