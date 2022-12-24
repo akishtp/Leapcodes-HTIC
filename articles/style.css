@@ -100,18 +100,39 @@ form > select:invalid {
 /* the article card - the horizontal one */
 .article-card {
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e4e7ee;
 }
 .article-card img {
-  width: 100px;
-  height: 100px;
+  height: 108px;
+  width: 108px;
   object-fit: cover;
   object-position: bottom;
 }
 .article-card .article-content {
-  margin: 4px 10px;
+  margin: 0 10px;
 }
 .article-card .article-content .article-header {
   color: #1c4284;
   font-weight: 700;
   font-size: 14px;
+  margin: 4px 0;
+}
+.article-card .article-content .article-date {
+  font-size: 12px;
+  font-weight: 300;
+  color: #8d8d8d;
+  margin: 4px 0;
+}
+.article-card .article-content .article-content-body {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.article-card .article-content .read-more {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.article-card .article-content .read-more a {
+  text-decoration: none;
+  color: #a72694;
 }
