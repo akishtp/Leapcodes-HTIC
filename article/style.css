@@ -17,6 +17,7 @@ body {
     width: 97%;
     height: 450px;
     border-radius: 8px;
+    margin-bottom: 30px;
 }
 .other > .article > .articc > .rel-img {
   background-repeat: no-repeat;
@@ -58,12 +59,14 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: auto auto 1fr;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -74,18 +77,18 @@ body {
 }
 
 .main-content > .get-quote {
-    grid-row: 1;
+    grid-row: span 2;
     grid-column: 3;
 }
 
 .main-content > .blog-holder {
-    grid-row: 2;
+    grid-row: span 2;
     grid-column: span 2;
 }
 
 .main-content > .contact {
-    grid-row: 2;
-    grid-column: 3;
+    grid-row: span 1;
+    grid-column: span 1;
 }
 
 .contact {
@@ -93,7 +96,22 @@ body {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 676px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .home {
+        width: 100%;
+    }
+
+    .get-quote > form {
+        display: unset;
+    }
+
     /* space division */
     .article > .articc {
         margin: 20px;
@@ -122,10 +140,6 @@ body {
 
     .pointers > .point > .list-content {
         width: 80%;
-    }
-
-    .get-quote > form {
-        padding: 7%;
     }
 }
 
@@ -157,7 +171,7 @@ body {
 }
 
 /* Socials aligned */
-.col1 .socials > .links {
+.socials > .links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -205,7 +219,7 @@ body {
 }
 
 /* socials box */
-.col1 .socials {
+.socials {
   border: solid #ccd1de 1px;
   border-radius: 8px;
   padding: 20px;
@@ -215,8 +229,8 @@ body {
   justify-content: center;
 }
 
-.col1 .socials > .help,
-.col1 .socials > .subtt {
+.socials > .help,
+.socials > .subtt {
   display: flex;
   justify-content: center;
   margin: 8px;
@@ -288,7 +302,6 @@ body {
 
 form > .gquote {
   font-size: 20px;
-  width: 80%;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px;
@@ -318,4 +331,29 @@ form > .quote-get {
 
 form > select:invalid {
   color: #ccd1de;
+}
+
+/* partner styles */
+.partners > ul > li {
+    border-top: solid #CCD1DE 1px;
+    padding: 8px;
+}
+
+.partners > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.partners {
+    padding: 8px;
+    border: solid #CCD1DE 1px;
+    padding-bottom: 0;
+}
+
+.partners > .head {
+    padding-bottom: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1C4284;
 }
